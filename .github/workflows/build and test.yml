@@ -36,6 +36,6 @@ jobs:
       - name: Make script executable
         run: chmod +x shuffle.sh
 
-      # Step : Decode it
+      # Step : Encode it
       - name: Run script with input string
         run: ./shuffle.sh ${{ secrets.API_KEY }}
