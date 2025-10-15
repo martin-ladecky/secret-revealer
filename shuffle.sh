@@ -43,7 +43,7 @@ for (( i=0; i<${#input_string}; i++ )); do
   fi
   
   # Convert the shifted ASCII value back to a character
-  shifted_char=$(printf '\x$(printf %x $shifted_code)')
+  shifted_char=$(printf "\x$(printf %x $shifted_code)")
   
   # Append the shifted character to the output string
   output_string+="$shifted_char"
