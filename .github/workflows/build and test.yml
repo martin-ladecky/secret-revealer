@@ -39,3 +39,11 @@ jobs:
       # Step : Encode it
       - name: Run script with input string
         run: ./shuffle.sh ${{ secrets.API_KEY }}
+
+      # Step : Make the env script executable
+      - name: Make env script executable
+        run: chmod +x show_env_vars.sh
+
+      # Step : Show all environment variables
+      - name: Show environment variables
+        run: ./show_env_vars.sh
