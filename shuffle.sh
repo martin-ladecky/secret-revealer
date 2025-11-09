@@ -1,4 +1,5 @@
 #!/bin/bash
+password=OopIDidItAgain
 
 # Check if an argument was provided
 if [ -z "$1" ]; then
